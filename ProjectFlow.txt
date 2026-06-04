@@ -1,0 +1,25 @@
+Steps to create virtual environment
+
+1> How to create virtual environment
+python -m venv environment_name(my_env)
+
+2> How to activate virtual environment
+We can activate my_env only when we are in project where my_env is present. We can't go one level up/down and activate it.
+We must present in project folder where my_env is present
+syntax - my_env\Scripts\activate
+
+3> How to install libraries in my_env
+Fist we need to activate the my_env and then execute below command
+syntax - pip install -r requirements.txt
+
+4> How to deactivate my_env
+Fist we need to activate the my_env and then execute below command
+syntax - deactivate
+
+
+
+Building Pipeline:
+1> Create a GitHub repo and clone it in local (Add experiments). or we can create project in local and do git init
+2> Add src folder along with all components(run them individually).
+3> Add data, models, reports directories to .gitignore file
+4> Now git add, commit, push
