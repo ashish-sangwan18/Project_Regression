@@ -1,0 +1,12 @@
+2026-06-08 07:51:37,359 - 1_Data_Ingestion - DEBUG - Data load has started
+2026-06-08 07:51:37,616 - 1_Data_Ingestion - DEBUG - Data loaded successfully from : https://github.com/ashish-sangwan18/Datasets/raw/refs/heads/main/wagedata.csv
+2026-06-08 07:51:37,619 - 1_Data_Ingestion - DEBUG - Saving raw data has started
+2026-06-08 07:51:37,626 - 1_Data_Ingestion - DEBUG - Raw Data saved successfully
+2026-06-08 07:51:37,629 - 1_Data_Ingestion - DEBUG - Saving train_test data has started
+2026-06-08 07:51:37,639 - 1_Data_Ingestion - DEBUG - Train_Test Data saved successfully
+2026-06-08 08:10:42,800 - 1_Data_Ingestion - DEBUG - Data load has started
+2026-06-08 08:10:46,338 - 1_Data_Ingestion - DEBUG - Data loaded successfully from : https://github.com/ashish-sangwan18/Datasets/raw/refs/heads/main/wagedata.csv
+2026-06-08 08:10:46,343 - 1_Data_Ingestion - DEBUG - Saving raw data has started
+2026-06-08 08:10:46,431 - 1_Data_Ingestion - DEBUG - Raw Data saved successfully
+2026-06-08 08:10:46,440 - 1_Data_Ingestion - DEBUG - Saving train_test data has started
+2026-06-08 08:10:46,569 - 1_Data_Ingestion - DEBUG - Train_Test Data saved successfully
