@@ -1,0 +1,28 @@
+2026-06-08 18:50:09,698 - 5_Model_Training_Evaluation - DEBUG - Test data has loaded successfully
+2026-06-08 18:50:09,703 - 5_Model_Training_Evaluation - DEBUG - Successfully divided test data into X_test, y_test
+2026-06-08 18:50:09,711 - 5_Model_Training_Evaluation - DEBUG - Constant has been added to x_test
+2026-06-08 18:52:46,156 - 5_Model_Training_Evaluation - DEBUG - Test data has loaded successfully
+2026-06-08 18:52:46,181 - 5_Model_Training_Evaluation - DEBUG - Successfully divided test data into X_test, y_test
+2026-06-08 18:52:46,255 - 5_Model_Training_Evaluation - DEBUG - Constant has been added to x_test
+2026-06-08 18:52:51,079 - 5_Model_Training_Evaluation - DEBUG - Test data has loaded successfully
+2026-06-08 18:52:51,083 - 5_Model_Training_Evaluation - DEBUG - Successfully divided test data into X_test, y_test
+2026-06-08 18:52:51,089 - 5_Model_Training_Evaluation - DEBUG - Constant has been added to x_test
+2026-06-08 18:52:51,103 - 5_Model_Training_Evaluation - DEBUG - Prediction has been generaed successfully
+2026-06-08 18:53:11,026 - 5_Model_Training_Evaluation - DEBUG - Test data has loaded successfully
+2026-06-08 18:53:11,029 - 5_Model_Training_Evaluation - DEBUG - Successfully divided test data into X_test, y_test
+2026-06-08 18:53:11,034 - 5_Model_Training_Evaluation - DEBUG - Constant has been added to x_test
+2026-06-08 18:53:11,038 - 5_Model_Training_Evaluation - DEBUG - Prediction has been generated successfully
+2026-06-08 19:04:37,745 - 5_Model_Training_Evaluation - DEBUG - Test data has loaded successfully
+2026-06-08 19:04:37,773 - 5_Model_Training_Evaluation - DEBUG - Successfully divided test data into X_test, y_test
+2026-06-08 19:04:37,840 - 5_Model_Training_Evaluation - DEBUG - Constant has been added to x_test
+2026-06-08 19:04:58,110 - 5_Model_Training_Evaluation - DEBUG - Test data has loaded successfully
+2026-06-08 19:04:58,114 - 5_Model_Training_Evaluation - DEBUG - Successfully divided test data into X_test, y_test
+2026-06-08 19:04:58,122 - 5_Model_Training_Evaluation - DEBUG - Constant has been added to x_test
+2026-06-08 19:04:58,138 - 5_Model_Training_Evaluation - DEBUG - Prediction has been generated successfully
+2026-06-08 19:12:25,701 - 5_Model_Training_Evaluation - DEBUG - Test data has loaded successfully
+2026-06-08 19:12:25,710 - 5_Model_Training_Evaluation - DEBUG - Successfully divided test data into X_test, y_test
+2026-06-08 19:12:25,731 - 5_Model_Training_Evaluation - DEBUG - Constant has been added to x_test
+2026-06-08 19:12:35,952 - 5_Model_Training_Evaluation - DEBUG - Test data has loaded successfully
+2026-06-08 19:12:35,955 - 5_Model_Training_Evaluation - DEBUG - Successfully divided test data into X_test, y_test
+2026-06-08 19:12:35,963 - 5_Model_Training_Evaluation - DEBUG - Constant has been added to x_test
+2026-06-08 19:12:35,971 - 5_Model_Training_Evaluation - DEBUG - Prediction has been generated successfully
