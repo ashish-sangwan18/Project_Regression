@@ -1,0 +1,4 @@
+schema: '2.0'
+stages:
+  Data_Ingestion:
+    cmd: python src/py_files/1_Data_Ingestion.py
