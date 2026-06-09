@@ -114,7 +114,6 @@ def main():
     except Exception as e:
         logger.error('Failed to complete data ingestion process - %s', e)
 
-
 if __name__ == '__main__':
     main()
 

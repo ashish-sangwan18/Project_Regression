@@ -1,4 +1,11 @@
 stages:
   Data_Ingestion:
     cmd: python src/py_files/1_Data_Ingestion.py
-      
+    deps:
+    - src/py_files/1_Data_Ingestion.py
+    # outs:
+    # - data/raw/Raw_Data.csv
+  Data_Analysis:
+    cmd: python src/py_files/2_Data_Analysis.py
+    deps:
+    - src/py_files/2_Data_Analysis.py 

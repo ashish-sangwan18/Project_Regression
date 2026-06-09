@@ -2,3 +2,15 @@ schema: '2.0'
 stages:
   Data_Ingestion:
     cmd: python src/py_files/1_Data_Ingestion.py
+    deps:
+    - path: src/py_files/1_Data_Ingestion.py
+      hash: md5
+      md5: 92ffd40acac99fc264133d760c493a08
+      size: 3566
+  Data_Analysis:
+    cmd: python src/py_files/2_Data_Analysis.py
+    deps:
+    - path: src/py_files/2_Data_Analysis.py
+      hash: md5
+      md5: bff6cc2f4de961c679c80bc61ab1bb0a
+      size: 1751
