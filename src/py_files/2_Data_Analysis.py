@@ -67,6 +67,7 @@ def main():
         logger.error("Data Analysis notebook has faile - %s", e)
         raise
 
+
 if __name__ == '__main__':
     main()
 

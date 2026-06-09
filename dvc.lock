@@ -12,5 +12,5 @@ stages:
     deps:
     - path: src/py_files/2_Data_Analysis.py
       hash: md5
-      md5: bff6cc2f4de961c679c80bc61ab1bb0a
-      size: 1751
+      md5: 3b47a6b7d41682c2fb038be6136f29e1
+      size: 1753
