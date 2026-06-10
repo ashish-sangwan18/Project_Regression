@@ -5,7 +5,10 @@ stages:
     - src/py_files/1_Data_Ingestion.py
     # outs:
     # - data/raw/Raw_Data.csv
+    params:
+    - Data_Ingestion.test_size
+
   Data_Analysis:
     cmd: python src/py_files/2_Data_Analysis.py
     deps:
-    - src/py_files/2_Data_Analysis.py 
+    - src/py_files/2_Data_Analysis.py

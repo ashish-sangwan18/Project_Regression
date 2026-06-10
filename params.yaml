@@ -1,0 +1,6 @@
+Data_Ingestion:
+  test_size: 0.2
+  
+Data_Analysis:
+  test_param: 
+

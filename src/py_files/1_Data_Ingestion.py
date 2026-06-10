@@ -13,6 +13,7 @@ from sklearn.model_selection import train_test_split
 
 import os
 import logging
+import yaml
 
 
 # In Python, calling logging.getLogger(name) multiple times with the exact same name will neither overwrite the logger nor create multiple copies
@@ -51,6 +52,19 @@ def create_logger_handler(log_folder, logger_name):
 
     return logger
 
+def load_params(param_file ,logger):
+    """ This function is to load param.yaml file """
+
+    try:
+        with open(param_file, 'r') as file:
+            params = yaml.safe_load(file)
+
+        logger.debug('params.yaml file loaded successfully')
+        return params
+        
+    except Exception as e:
+        logger.error('Unexpected error occurred while loading the data: %s', e)
+        raise
 
 
 
@@ -67,7 +81,7 @@ def load_data(path, logger):
         raise
 
 
-def save_data(df, raw_path, train_path, test_path, logger):
+def save_data(df, raw_path, train_path, test_path, logger, test_data_size):
     """ Saving Data """
 
     try:
@@ -80,7 +94,7 @@ def save_data(df, raw_path, train_path, test_path, logger):
 
         logger.debug('Saving train_test data has started')
 
-        train_data, test_data = train_test_split(df, test_size=0.2, random_state=123, shuffle=True)
+        train_data, test_data = train_test_split(df, test_size=test_data_size, random_state=123, shuffle=True)
         train_data.reset_index(drop=True, inplace=True)
         test_data.reset_index(drop=True, inplace=True)
 
@@ -109,7 +123,12 @@ def main():
         train_path = './data/Train_Test/' + 'Train_Data.csv'
         test_path = './data/Train_Test/' + 'Test_Data.csv'
 
-        save_data(df, raw_path, train_path, test_path, logger)
+
+        # test_size=0.2
+        param_file_path = './params.yaml'
+        params = load_params(param_file_path, logger)
+        test_size = params['Data_Ingestion']['test_size']
+        save_data(df, raw_path, train_path, test_path, logger, test_size)
 
     except Exception as e:
         logger.error('Failed to complete data ingestion process - %s', e)
