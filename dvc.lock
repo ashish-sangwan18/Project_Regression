@@ -9,7 +9,7 @@ stages:
       size: 4191
     params:
       params.yaml:
-        Data_Ingestion.test_size: 0.1
+        Data_Ingestion.test_size: 0.3
   Data_Analysis:
     cmd: python src/py_files/2_Data_Analysis.py
     deps:
@@ -26,4 +26,4 @@ stages:
       size: 5067
     params:
       params.yaml:
-        Model_Training_Evaluation.test_np_round: 1
+        Model_Training_Evaluation.test_np_round: 3
