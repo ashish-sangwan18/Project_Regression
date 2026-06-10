@@ -5,11 +5,11 @@ stages:
     deps:
     - path: src/py_files/1_Data_Ingestion.py
       hash: md5
-      md5: 06d524d160d35a70d80da4116c8495d3
-      size: 4214
+      md5: a0fd238799edc7a6473d7129abfc935f
+      size: 4191
     params:
       params.yaml:
-        Data_Ingestion.test_size: 0.31
+        Data_Ingestion.test_size: 0.1
   Data_Analysis:
     cmd: python src/py_files/2_Data_Analysis.py
     deps:
@@ -22,5 +22,8 @@ stages:
     deps:
     - path: src/py_files/5_Model_Training_Evaluation.py
       hash: md5
-      md5: 726e7649c6aa996ccff61e150b778f0d
-      size: 4682
+      md5: be6f9defe4b25e080dfda57c16cdd975
+      size: 5067
+    params:
+      params.yaml:
+        Model_Training_Evaluation.test_np_round: 1

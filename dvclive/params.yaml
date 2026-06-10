@@ -1,0 +1,7 @@
+params:
+  Data_Ingestion:
+    test_size: 0.1
+  Data_Analysis:
+    test_param:
+  Model_Training_Evaluation:
+    test_np_round: 1

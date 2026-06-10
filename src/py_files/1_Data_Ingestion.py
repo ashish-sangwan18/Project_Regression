@@ -125,9 +125,10 @@ def main():
 
 
         # test_size=0.2
-        param_file_path = './params.yaml'
-        params = load_params(param_file_path, logger)
+        params = load_params('./params.yaml', logger)
         test_size = params['Data_Ingestion']['test_size']
+        
+        
         save_data(df, raw_path, train_path, test_path, logger, test_size)
 
     except Exception as e:

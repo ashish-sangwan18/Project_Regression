@@ -17,3 +17,13 @@ stages:
     cmd: python src/py_files/5_Model_Training_Evaluation.py
     deps:
     - src/py_files/5_Model_Training_Evaluation.py
+    params:
+    - Model_Training_Evaluation.test_np_round
+
+metrics:
+- dvclive/metrics.json
+plots:
+- dvclive/plots/metrics:
+    x: step
+params:
+- dvclive/params.yaml

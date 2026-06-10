@@ -16,6 +16,7 @@ import pickle
 import os
 import logging
 import yaml
+from dvclive import Live
 
 
 def create_logger_handler(log_folder, logger_name):
@@ -141,6 +142,9 @@ def main():
         logger_name = '5_Model_Training_Evaluation'
         logger = create_logger_handler('./logs', logger_name)
 
+        params = load_params('./params.yaml', logger)
+        test_param = params['Model_Training_Evaluation']['test_np_round']
+
         reading_path = './data/Train_Test/Train_Data.csv'
         df_train = load_data(reading_path, logger)
 
@@ -152,7 +156,13 @@ def main():
         prediction = model_prediction(df_test, model, logger)
         accuracy = model_accuracy(df_test, prediction, logger)
 
+
+        with Live(save_dvc_exp=True) as live:
+            live.log_metric('MAPE', accuracy)
+            live.log_param('params', params)
+
         logger.debug('Model accuracy preparation has completed - %s', accuracy)
+        logger.debug('Model accuracy preparation has completed - %s', test_param)
 
     except Exception as e:
         logger.error('Failed to complete data ingestion process - %s', e)
