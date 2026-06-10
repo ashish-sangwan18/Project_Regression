@@ -12,3 +12,8 @@ stages:
     cmd: python src/py_files/2_Data_Analysis.py
     deps:
     - src/py_files/2_Data_Analysis.py
+
+  Model_Training_Evaluation:
+    cmd: python src/py_files/5_Model_Training_Evaluation.py
+    deps:
+    - src/py_files/5_Model_Training_Evaluation.py

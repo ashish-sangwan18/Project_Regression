@@ -9,7 +9,7 @@ stages:
       size: 4214
     params:
       params.yaml:
-        Data_Ingestion.test_size: 0.2
+        Data_Ingestion.test_size: 0.31
   Data_Analysis:
     cmd: python src/py_files/2_Data_Analysis.py
     deps:
@@ -17,3 +17,10 @@ stages:
       hash: md5
       md5: 3b47a6b7d41682c2fb038be6136f29e1
       size: 1753
+  Model_Training_Evaluation:
+    cmd: python src/py_files/5_Model_Training_Evaluation.py
+    deps:
+    - path: src/py_files/5_Model_Training_Evaluation.py
+      hash: md5
+      md5: 726e7649c6aa996ccff61e150b778f0d
+      size: 4682
